@@ -1,0 +1,100 @@
+site_name: BO
+copyright: Copyright &copy; 2018 - 2023 MIBO   <br>能改的、叫缺点，不能改的、叫弱点。
+site_author: 'MIBO'
+site_description: 'MIBO'
+
+extra:
+  social:
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:<aooboo@88.com>
+      name: 邮件给我
+  generator: false
+ 
+plugins: ["search"]
+#  - search
+#      jieba_dict: dict.txt    
+theme:
+  name: material
+  icon: material/emoticon-happy
+#  font:
+#    text: Ma Shan Zheng
+#    code: Ma Shan Zheng
+  language: zh
+  features:
+  #启用部分后，顶级部分将在上方视口的侧边栏中呈现为组(关闭该功能后、左侧不再啰嗦)
+   # - navigation.sections
+    #MkDocs 材质会将浏览器的渲染逻辑替换为漂亮的小工具提示
+    - content.tooltips
+    # 启用每个文章的章节目录
+    - toc.follow
+    # 把目录合并到左侧
+    #- toc.integrate
+    - navigation.top
+    
+    #启用即时加载后，所有内部链接的点击将被拦截并通过XHR调度，而无需完全重新加载页面
+    #启用定位点跟踪后，地址栏中的 URL 将使用内容列表中突出显示的活动定位点自动更新
+    - navigation.tracking
+    #粘滞选项卡后，导航选项卡将锁定在标题下方,并在向下滚动时始终保持可见。
+    - navigation.tabs
+    #- navigation.tabs.sticky
+    
+    #启用后，整个文档网站中的所有内容选项卡都将链接，并在用户单击选项卡时切换到同一标签，最下 markdown_extensions 搭配
+    - content.tabs.link
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      primary: indigo 
+      accent: indigo 
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      primary: indigo 
+      accent: light blue 
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+        
+extra_css:
+  - Z-cfg/extra.css
+
+
+markdown_extensions:
+  - toc
+  - md_in_html
+  - smarty:
+  - admonition
+  - codehilite:
+      guess_lang: false
+      linenums: false
+  - footnotes
+  - meta
+  - def_list
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.tasklist
+  - pymdownx.tilde
+
+  - pymdownx.mark
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.smartsymbols
+  # 下面两个选项卡支持
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true 
