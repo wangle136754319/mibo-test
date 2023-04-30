@@ -1,10 +1,17 @@
-# Builder
-FROM node:16-alpine as builder
-WORKDIR /src
-COPY . /src/
-RUN yarn install --frozen-lockfile && yarn build
+FROM python:slim
 
-# App
-FROM nginxinc/nginx-unprivileged
-COPY --chown=nginx:nginx --from=builder /src/out /app
-COPY default.conf /etc/nginx/conf.d/default.conf
+LABEL version="1.0" description="这是一个mkdocs服务器" by="mibo"
+
+#RUN pip3 config set global.index-url http://pypi.douban.com/simple/ && pip3 config set install.trusted-host pypi.douban.com
+
+RUN pip3 install mkdocs mkdocs-material
+
+EXPOSE 80
+
+WORKDIR /home
+
+ADD . /home
+
+
+CMD ["mkdocs","serve","-a","0.0.0.0:30001"]
+
