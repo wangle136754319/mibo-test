@@ -16,18 +16,14 @@ COPY supervisor.conf /etc/apache2/sites-available/supervisor.conf
 
 WORKDIR /home
 
-COPY run.sh /home/run.sh
+#COPY run.sh /home/run.sh
 
 #EXPOSE 80
 
-RUN a2enmod proxy && a2enmod proxy_http && service apache2 restart && chmod +x /home/run.sh
+RUN a2enmod proxy && a2enmod proxy_http && service apache2 restart
 
 
-CMD ["./run.sh"]
+CMD /usr/local/bin/supervisord  -c  /etc/apache2/sites-available/supervisor.conf
 
 #CMD ["supervisord","-c","/etc/apache2/sites-available/supervisor.conf"]
-
-
-
-
 
