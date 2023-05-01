@@ -16,7 +16,7 @@ COPY supervisor.conf /etc/apache2/sites-available/supervisor.conf
 
 WORKDIR /home
 
-COPY enport.sh /home
+COPY enport.sh /home/enport.sh
 
 #EXPOSE 80
 
