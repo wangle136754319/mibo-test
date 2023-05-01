@@ -15,7 +15,7 @@ COPY 000-default.conf /etc/apache2/sites-available/000-default.conf
 COPY supervisor.conf /etc/apache2/sites-available/supervisor.conf
 
 
-RUN a2enmod proxy && a2enmod proxy_http
+RUN a2enmod proxy && a2enmod proxy_http && service apache2 restart
 
 CMD ["supervisord","-c","/etc/apache2/sites-available/supervisor.conf"]
 
