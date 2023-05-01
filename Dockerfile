@@ -6,7 +6,7 @@ LABEL version="1.0" description="这是一个mkdocs服务器" by="mibo"
 
 RUN pip3 install mkdocs mkdocs-material
 
-EXPOSE 80
+EXPOSE 800
 
 WORKDIR /home
 
