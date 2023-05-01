@@ -12,6 +12,7 @@ WORKDIR /home
 
 ADD . /home
 
+RUN mkdocs build
 
-CMD ["mkdocs","serve","-a","0.0.0.0:30001"]
+CMD ["cd site/ && python3 -m http.server 80"]
 
