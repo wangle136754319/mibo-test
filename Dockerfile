@@ -13,14 +13,17 @@ ADD supervisor_css.tar /var/www/html/
 
 COPY 000-default.conf /etc/apache2/sites-available/000-default.conf
 COPY supervisor.conf /etc/apache2/sites-available/supervisor.conf
-COPY enport.sh /root/enport.sh
+
+WORKDIR /home
+
+COPY enport.sh /home
 
 #EXPOSE 80
 
-RUN a2enmod proxy && a2enmod proxy_http && service apache2 restart && chmod +x /root/enport.sh
+RUN a2enmod proxy && a2enmod proxy_http && service apache2 restart && chmod +x /home/enport.sh
 
 
-CMD ["/root/enport.sh"]
+CMD ["/home/enport.sh"]
 
 #CMD ["supervisord","-c","/etc/apache2/sites-available/supervisor.conf"]
 
