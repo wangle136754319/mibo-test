@@ -4,7 +4,9 @@ RUN sed -i 's/deb.debian.org/mirrors.tuna.tsinghua.edu.cn/g' /etc/apt/sources.li
 
 RUN apt update && apt install git apache2 -y 
 
-RUN pip3 install supervisor# -i https://pypi.douban.com/simple/
+RUN pip3 install supervisor
+
+# -i https://pypi.douban.com/simple/
 
 ADD supervisor_css.tar /var/www/html/
 
