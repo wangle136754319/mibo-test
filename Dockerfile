@@ -1,18 +1,21 @@
 FROM python:slim
 
-LABEL version="1.0" description="这是一个mkdocs服务器" by="mibo"
+RUN sed -i 's/deb.debian.org/mirrors.tuna.tsinghua.edu.cn/g' /etc/apt/sources.list
 
-#RUN pip3 config set global.index-url http://pypi.douban.com/simple/ && pip3 config set install.trusted-host pypi.douban.com
+apt install git apache2 -y
 
-RUN pip3 install mkdocs mkdocs-material
+rm -rf /var/lib/apt/lists
 
-EXPOSE 800
+ADD supervisor_css.tar /var/www/html/
 
-WORKDIR /home
+COPY 000-default.conf /etc/apache2/sites-available/000-default.conf
+COPY supervisor.conf /etc/apache2/sites-available/supervisor.conf
 
-ADD . /home
+RUN a2enmod proxy && a2enmod proxy_http
 
-RUN mkdocs build
+CMD supervisord -c /etc/apache2/sites-available/supervisor.conf
 
-CMD cd site/ && python3 -m http.server 80
+
+
+
 
