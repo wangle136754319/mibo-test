@@ -14,5 +14,5 @@ ADD . /home
 
 RUN mkdocs build
 
-CMD ["cd site/ && python3 -m http.server 80"]
+CMD cd site/ && python3 -m http.server 80
 
