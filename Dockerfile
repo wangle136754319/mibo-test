@@ -2,7 +2,7 @@ FROM python:slim
 
 #RUN sed -i 's/deb.debian.org/mirrors.tuna.tsinghua.edu.cn/g' /etc/apt/sources.list
 
-apt install git apache2 -y
+RUN apt update && apt install git apache2 -y 
 
 ADD supervisor_css.tar /var/www/html/
 
