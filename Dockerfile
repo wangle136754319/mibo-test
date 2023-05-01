@@ -17,8 +17,10 @@ COPY supervisor.conf /etc/apache2/sites-available/supervisor.conf
 EXPOSE 80
 
 RUN a2enmod proxy && a2enmod proxy_http && service apache2 restart
-COPY enport.sh　/
-CMD　bash enport.sh
+
+COPY enport.sh　/root/
+
+CMD　bash /root/enport.sh
 
 #CMD ["supervisord","-c","/etc/apache2/sites-available/supervisor.conf"]
 
