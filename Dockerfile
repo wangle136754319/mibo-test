@@ -2,7 +2,7 @@ FROM python:slim
 
 #RUN sed -i 's/deb.debian.org/mirrors.tuna.tsinghua.edu.cn/g' /etc/apt/sources.list
 
-RUN apt update && apt install apache2 -y 
+#RUN apt update && apt install apache2 -y 
 
 RUN pip3 install supervisor
 
@@ -20,5 +20,6 @@ EXPOSE 80
 
 RUN a2enmod proxy && a2enmod proxy_http && service apache2 restart 
 
-CMD ["supervisord","-c","/etc/apache2/sites-available/supervisor.conf"]
+# CMD ["supervisord","-c","/etc/apache2/sites-available/supervisor.conf"]
+CMD ["python3","-m","http.server","80"]
 
