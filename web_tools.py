@@ -59,4 +59,4 @@ def sendmd():
 if __name__ == '__main__':
     config(title="JiaY", theme="yeti", description="yes")  # global configuration
     # start_server(sendmd, port=8000,cdn=False)
-    pywebio.start_server(sendmd, port=8012, cdn=False)
+    pywebio.start_server(sendmd, port=8012, cdn=True)
