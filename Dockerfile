@@ -18,7 +18,7 @@ ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:
 
 EXPOSE 80
 
-# RUN a2enmod proxy && a2enmod proxy_http && service apache2 restart 
+RUN a2enmod proxy && a2enmod proxy_http && service apache2 restart 
 
 CMD ["supervisord","-nc","/etc/apache2/sites-available/supervisor.conf"]
 # CMD ["python3","-m","http.server","80"]
