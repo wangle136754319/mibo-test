@@ -14,6 +14,10 @@ COPY service/supervisor.conf /etc/apache2/sites-available/supervisor.conf
 
 WORKDIR /home
 
+ADD . /home
+
+RUN pip3 install -r requirements.txt
+
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 
 EXPOSE 80
