@@ -16,7 +16,7 @@ WORKDIR /home
 
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 
-#EXPOSE 80
+EXPOSE 80
 
 RUN a2enmod proxy && a2enmod proxy_http && service apache2 restart 
 
