@@ -20,6 +20,6 @@ EXPOSE 80
 
 # RUN a2enmod proxy && a2enmod proxy_http && service apache2 restart 
 
-# CMD ["supervisord","-c","/etc/apache2/sites-available/supervisor.conf"]
-CMD ["python3","-m","http.server","80"]
+CMD ["supervisord","-nc","/etc/apache2/sites-available/supervisor.conf"]
+# CMD ["python3","-m","http.server","80"]
 
