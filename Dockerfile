@@ -23,7 +23,7 @@ RUN echo "#!/bin/sh\n/usr/local/bin/supervisord  -c  /etc/apache2/sites-availabl
 
 RUN chmod +x /home/run.sh && a2enmod proxy && a2enmod proxy_http && service apache2 restart 
 
-CMD ["./run.sh"]
+CMD ["/usr/sbin/apachectl start"]
 #CMD /usr/local/bin/supervisord  -c  /etc/apache2/sites-available/supervisor.conf
 
 #CMD ["supervisord","-c","/etc/apache2/sites-available/supervisor.conf"]
