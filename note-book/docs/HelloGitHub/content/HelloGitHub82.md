@@ -1,24 +1,4 @@
 # 《HelloGitHub》第 82 期
-> 兴趣是最好的老师，**HelloGitHub** 让你对编程感兴趣！
-<p align="center">
-    <img src='https://raw.githubusercontent.com/521xueweihan/img_logo/master/logo/cover.jpg' style="max-width:100%;"></img>
-</p>
-
-## 目录
-
-点击右上角的 **「目录」** 图标打开目录，获得更好的阅读体验。
-
-![](https://raw.githubusercontent.com/521xueweihan/img_logo/master/logo/catalog.png)
-
-**Tips**：如果遇到图片刷不出来的情况，[点击](https://hellogithub.com/periodical/volume/82) 换一种浏览方式。
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/521xueweihan/img_logo/master/logo/weixin.png" style="max-width:30%;"></img><br>
-关注「HelloGitHub」公众号，第一时间收到推送
-</p>
-
-## 内容
-> **以下为本期内容**｜每个月 **28** 号更新
 
 ### C 项目
 1、[bare-metal-programming-guide](https://hellogithub.com/periodical/statistics/click/?target=https://github.com/cpq/bare-metal-programming-guide)：裸机编程指南。这是一份教你如何在不依赖 IDE 的情况下，进行单片机开发的教程。内容先是介绍了寄存器、向量表、启动代码、链接脚本等知识点，最后实现了一个带设备仪表盘的 Web 服务器。
@@ -314,19 +294,3 @@ print("Label probs:", probs)  # 图文匹配概率 [[1.268734e-03 5.436878e-02 6
 
 <p align="center"><img src='https://raw.githubusercontent.com/521xueweihan/img3/master/hellogithub/82/568649213.png' style="max-width:80%; max-height=80%;"></img></p>
 
-
-
-<p align="center">
-    <a href="https://github.com/521xueweihan/HelloGitHub/blob/master/content/HelloGitHub81.md">『上一期』</a> | <a href='https://github.com/521xueweihan/HelloGitHub/issues/899'>反馈和建议</a> | <a href="https://github.com/521xueweihan/HelloGitHub/blob/master/content/HelloGitHub83.md">『下一期』</a>
-</p>
-
----
-<p align="center">
-    👉 <a href='https://hellogithub.com/periodical'>来！推荐开源项目</a> 👈<br>
-    微信中搜：<strong>HelloGitHub</strong> 关注公众号<br>
-    不仅能第一时间收到推送，还有回馈粉丝的活动<br>
-    如果文中的图刷不出来，可以点击 <a href='https://hellogithub.com/periodical/volume/82'>这里</a>。
-</p>
-
-## 声明
-<a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh"><img alt="知识共享许可协议" style="border-width: 0" src="https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png"></a><br>本作品采用 <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh">署名-非商业性使用-禁止演绎 4.0 国际</a> 进行许可。

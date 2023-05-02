@@ -1,24 +1,4 @@
 # 《HelloGitHub》第 14 期
-> 兴趣是最好的老师，**HelloGitHub** 让你对编程感兴趣！
-<p align="center">
-    <img src='https://raw.githubusercontent.com/521xueweihan/img_logo/master/logo/cover.jpg' style="max-width:100%;"></img>
-</p>
-
-## 目录
-
-点击右上角的 **「目录」** 图标打开目录，获得更好的阅读体验。
-
-![](https://raw.githubusercontent.com/521xueweihan/img_logo/master/logo/catalog.png)
-
-**Tips**：如果遇到图片刷不出来的情况，[点击](https://hellogithub.com/periodical/volume/14) 换一种浏览方式。
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/521xueweihan/img_logo/master/logo/weixin.png" style="max-width:30%;"></img><br>
-关注「HelloGitHub」公众号，第一时间收到推送
-</p>
-
-## 内容
-> **以下为本期内容**｜每个月 **28** 号更新
 
 ### C 项目
 1、[ip2region](https://hellogithub.com/periodical/statistics/click/?target=https://github.com/lionsoul2014/ip2region)：IP 到地区的映射库，速度快（毫秒级）、准确性高（99.9%），妈妈再也不用担心我的 IP 地址定位，示例代码：
@@ -137,19 +117,3 @@ gcc -g -O2 testSearcher.c ip2region.c
 23、[security-101-for-saas-startups](https://hellogithub.com/periodical/statistics/click/?target=https://github.com/forter/security-101-for-saas-startups)：归纳总结了一个初创企业在各个阶段所期待的安全建议，初创企业所掌握的资金和数据越多，那么对于安全的投资也要越多，[中文翻译版](https://github.com/forter/security-101-for-saas-startups/blob/chinese/readme.md)
 
 
-
-
-<p align="center">
-    <a href="https://github.com/521xueweihan/HelloGitHub/blob/master/content/HelloGitHub13.md">『上一期』</a> | <a href='https://github.com/521xueweihan/HelloGitHub/issues/899'>反馈和建议</a> | <a href="https://github.com/521xueweihan/HelloGitHub/blob/master/content/HelloGitHub15.md">『下一期』</a>
-</p>
-
----
-<p align="center">
-    👉 <a href='https://hellogithub.com/periodical'>来！推荐开源项目</a> 👈<br>
-    微信中搜：<strong>HelloGitHub</strong> 关注公众号<br>
-    不仅能第一时间收到推送，还有回馈粉丝的活动<br>
-    如果文中的图刷不出来，可以点击 <a href='https://hellogithub.com/periodical/volume/14'>这里</a>。
-</p>
-
-## 声明
-<a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh"><img alt="知识共享许可协议" style="border-width: 0" src="https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png"></a><br>本作品采用 <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh">署名-非商业性使用-禁止演绎 4.0 国际</a> 进行许可。

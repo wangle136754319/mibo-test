@@ -1,24 +1,4 @@
 # 《HelloGitHub》第 08 期
-> 兴趣是最好的老师，**HelloGitHub** 让你对编程感兴趣！
-<p align="center">
-    <img src='https://raw.githubusercontent.com/521xueweihan/img_logo/master/logo/cover.jpg' style="max-width:100%;"></img>
-</p>
-
-## 目录
-
-点击右上角的 **「目录」** 图标打开目录，获得更好的阅读体验。
-
-![](https://raw.githubusercontent.com/521xueweihan/img_logo/master/logo/catalog.png)
-
-**Tips**：如果遇到图片刷不出来的情况，[点击](https://hellogithub.com/periodical/volume/08) 换一种浏览方式。
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/521xueweihan/img_logo/master/logo/weixin.png" style="max-width:30%;"></img><br>
-关注「HelloGitHub」公众号，第一时间收到推送
-</p>
-
-## 内容
-> **以下为本期内容**｜每个月 **28** 号更新
 
 ### C# 项目
 1、[Newtonsoft.Json](https://hellogithub.com/periodical/statistics/click/?target=https://github.com/JamesNK/Newtonsoft.Json)：Newtonsoft.Json 是一款 .NET 平台中开源的 JSON 序列化和反序列化类库，示例代码：
@@ -209,19 +189,3 @@ finally:
 19、[the-swift-programming-language-in-chinese](https://hellogithub.com/periodical/statistics/click/?target=https://github.com/SwiftGGTeam/the-swift-programming-language-in-chinese)：中文版 Apple 官方 Swift 教程《The Swift Programming Language》
 
 
-
-
-<p align="center">
-    <a href="https://github.com/521xueweihan/HelloGitHub/blob/master/content/HelloGitHub07.md">『上一期』</a> | <a href='https://github.com/521xueweihan/HelloGitHub/issues/899'>反馈和建议</a> | <a href="https://github.com/521xueweihan/HelloGitHub/blob/master/content/HelloGitHub09.md">『下一期』</a>
-</p>
-
----
-<p align="center">
-    👉 <a href='https://hellogithub.com/periodical'>来！推荐开源项目</a> 👈<br>
-    微信中搜：<strong>HelloGitHub</strong> 关注公众号<br>
-    不仅能第一时间收到推送，还有回馈粉丝的活动<br>
-    如果文中的图刷不出来，可以点击 <a href='https://hellogithub.com/periodical/volume/08'>这里</a>。
-</p>
-
-## 声明
-<a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh"><img alt="知识共享许可协议" style="border-width: 0" src="https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png"></a><br>本作品采用 <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh">署名-非商业性使用-禁止演绎 4.0 国际</a> 进行许可。

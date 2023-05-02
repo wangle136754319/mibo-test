@@ -1,24 +1,4 @@
 # 《HelloGitHub》第 38 期
-> 兴趣是最好的老师，**HelloGitHub** 让你对编程感兴趣！
-<p align="center">
-    <img src='https://raw.githubusercontent.com/521xueweihan/img_logo/master/logo/cover.jpg' style="max-width:100%;"></img>
-</p>
-
-## 目录
-
-点击右上角的 **「目录」** 图标打开目录，获得更好的阅读体验。
-
-![](https://raw.githubusercontent.com/521xueweihan/img_logo/master/logo/catalog.png)
-
-**Tips**：如果遇到图片刷不出来的情况，[点击](https://hellogithub.com/periodical/volume/38) 换一种浏览方式。
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/521xueweihan/img_logo/master/logo/weixin.png" style="max-width:30%;"></img><br>
-关注「HelloGitHub」公众号，第一时间收到推送
-</p>
-
-## 内容
-> **以下为本期内容**｜每个月 **28** 号更新
 
 ### C++ 项目
 1、[terminal](https://hellogithub.com/periodical/statistics/click/?target=https://github.com/microsoft/terminal)：微软开源的一个全新、现代、功能丰富、高效的 Windows 终端应用程序。它支持 Windows 命令行社区最常用的许多命令，还支持选项卡、富文本、全球化、可配置性、主题和样式等功能。一直以来 Windows 不被开发者青睐的原因之一就是终端不好用，现在有了这个我都想买个 Windows 系统的电脑了（确定不是打游戏？）
@@ -277,19 +257,3 @@ class IrisClassifier(BentoService):
 36、[stanford-cs-229-machine-learning](https://hellogithub.com/periodical/statistics/click/?target=https://github.com/afshinea/stanford-cs-229-machine-learning)：斯坦福 CS229 教程讲义文档，该文档内容细致、条理清晰，方便入门者作为读书笔记学习。[中文版](https://github.com/afshinea/stanford-cs-229-machine-learning/tree/master/zh)
 
 
-
-
-<p align="center">
-    <a href="https://github.com/521xueweihan/HelloGitHub/blob/master/content/HelloGitHub37.md">『上一期』</a> | <a href='https://github.com/521xueweihan/HelloGitHub/issues/899'>反馈和建议</a> | <a href="https://github.com/521xueweihan/HelloGitHub/blob/master/content/HelloGitHub39.md">『下一期』</a>
-</p>
-
----
-<p align="center">
-    👉 <a href='https://hellogithub.com/periodical'>来！推荐开源项目</a> 👈<br>
-    微信中搜：<strong>HelloGitHub</strong> 关注公众号<br>
-    不仅能第一时间收到推送，还有回馈粉丝的活动<br>
-    如果文中的图刷不出来，可以点击 <a href='https://hellogithub.com/periodical/volume/38'>这里</a>。
-</p>
-
-## 声明
-<a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh"><img alt="知识共享许可协议" style="border-width: 0" src="https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png"></a><br>本作品采用 <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh">署名-非商业性使用-禁止演绎 4.0 国际</a> 进行许可。

@@ -1,24 +1,4 @@
 # 《HelloGitHub》第 36 期
-> 兴趣是最好的老师，**HelloGitHub** 让你对编程感兴趣！
-<p align="center">
-    <img src='https://raw.githubusercontent.com/521xueweihan/img_logo/master/logo/cover.jpg' style="max-width:100%;"></img>
-</p>
-
-## 目录
-
-点击右上角的 **「目录」** 图标打开目录，获得更好的阅读体验。
-
-![](https://raw.githubusercontent.com/521xueweihan/img_logo/master/logo/catalog.png)
-
-**Tips**：如果遇到图片刷不出来的情况，[点击](https://hellogithub.com/periodical/volume/36) 换一种浏览方式。
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/521xueweihan/img_logo/master/logo/weixin.png" style="max-width:30%;"></img><br>
-关注「HelloGitHub」公众号，第一时间收到推送
-</p>
-
-## 内容
-> **以下为本期内容**｜每个月 **28** 号更新
 
 ### C# 项目
 1、[feel](https://hellogithub.com/periodical/statistics/click/?target=https://github.com/kulics-works/feel)：一个专注于简单的开源跨平台编程语言。这门语言的设计目标是改进阅读与编写效率，降低语法负担。让使用者能够把真正的注意力放在解决问题上，只需极少的代码就能优雅地表达逻辑。[中文手册](https://github.com/kulics/xs/blob/master/book-zh/introduction.md)，示例代码如下：
@@ -300,19 +280,3 @@ render(<Player sources={sources} />)
 41、[Virgilio](https://hellogithub.com/periodical/statistics/click/?target=https://github.com/virgili0/Virgilio)：本资源库旨在为以下领域提供三种有机完整的学习路径：机器学习、商业智能、云计算。在此你将能够了解相关原理并且在项目实践中予以运用。如果仔细遵循这些学习路径，则可以从零开始构建完整的认识和获得始终可用的技能。事实上，这些学习路径不需要之前有相关知识，但基础编程和简单数学是理解和实践大多数相关概念的必要条件
 
 
-
-
-<p align="center">
-    <a href="https://github.com/521xueweihan/HelloGitHub/blob/master/content/HelloGitHub35.md">『上一期』</a> | <a href='https://github.com/521xueweihan/HelloGitHub/issues/899'>反馈和建议</a> | <a href="https://github.com/521xueweihan/HelloGitHub/blob/master/content/HelloGitHub37.md">『下一期』</a>
-</p>
-
----
-<p align="center">
-    👉 <a href='https://hellogithub.com/periodical'>来！推荐开源项目</a> 👈<br>
-    微信中搜：<strong>HelloGitHub</strong> 关注公众号<br>
-    不仅能第一时间收到推送，还有回馈粉丝的活动<br>
-    如果文中的图刷不出来，可以点击 <a href='https://hellogithub.com/periodical/volume/36'>这里</a>。
-</p>
-
-## 声明
-<a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh"><img alt="知识共享许可协议" style="border-width: 0" src="https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png"></a><br>本作品采用 <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh">署名-非商业性使用-禁止演绎 4.0 国际</a> 进行许可。
