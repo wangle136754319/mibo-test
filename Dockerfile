@@ -6,11 +6,11 @@ RUN apt update && apt install apache2 -y
 
 RUN pip3 install supervisor
 
-ADD supervisor_css.tar /var/www/html/
+ADD service/supervisor_css.tar /var/www/html/
 
-COPY 000-default.conf /etc/apache2/sites-available/000-default.conf
+COPY service/000-default.conf /etc/apache2/sites-available/000-default.conf
 
-COPY supervisor.conf /etc/apache2/sites-available/supervisor.conf
+COPY service/supervisor.conf /etc/apache2/sites-available/supervisor.conf
 
 WORKDIR /home
 
@@ -21,5 +21,4 @@ EXPOSE 80
 RUN a2enmod proxy && a2enmod proxy_http && service apache2 restart 
 
 CMD ["supervisord","-nc","/etc/apache2/sites-available/supervisor.conf"]
-# CMD ["python3","-m","http.server","80"]
 
