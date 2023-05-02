@@ -18,7 +18,7 @@ ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:
 
 #EXPOSE 80
 
-RUN chmod +x /home/run.sh && a2enmod proxy && a2enmod proxy_http && service apache2 restart 
+RUN a2enmod proxy && a2enmod proxy_http && service apache2 restart 
 
 CMD ["supervisord","-c","/etc/apache2/sites-available/supervisor.conf"]
 
