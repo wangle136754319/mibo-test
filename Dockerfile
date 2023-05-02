@@ -4,9 +4,9 @@ FROM python:slim
 
 RUN apt update && apt install apache2 -y 
 
-RUN pip3 install supervisor
+RUN pip3 install supervisor && \
+	cp -r /usr/local/lib/python3.11/site-packages/supervisor/ui/* /var/www/html/
 
-ADD service/supervisor_css.tar /var/www/html/
 
 COPY service/000-default.conf /etc/apache2/sites-available/000-default.conf
 
