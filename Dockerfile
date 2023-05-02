@@ -8,21 +8,25 @@ RUN pip3 install supervisor && \
 	cp -r /usr/local/lib/python3.11/site-packages/supervisor/ui/* /var/www/html/
 
 
-COPY service/000-default.conf /etc/apache2/sites-available/000-default.conf
+ADD docker-work /etc/apache2/sites-available/
 
-COPY service/supervisor.conf /etc/apache2/sites-available/supervisor.conf
+
+
+# #pywebio Support
+# RUN pip3 install -r /etc/apache2/sites-available/requirements.txt
+# 
+# RUN cp -r /usr/local/lib/python3.11/site-packages/pywebio/html/* /var/www/html/
+# #pywebio Support
+
+EXPOSE 80
+
+RUN pip3 install mkdocs mkdocs-material
+
+ADD note-book /home
 
 WORKDIR /home
 
-ADD . /home
-
-RUN pip3 install -r requirements.txt
-
-RUN cp -r /usr/local/lib/python3.11/site-packages/pywebio/html/* /var/www/html/
-
-ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-
-EXPOSE 80
+RUN mkdocs build -d /var/www/html/
 
 RUN a2enmod proxy && a2enmod proxy_http && service apache2 restart 
 
