@@ -1,21 +1,17 @@
 FROM python:slim
 
-#RUN sed -i 's/deb.debian.org/mirrors.tuna.tsinghua.edu.cn/g' /etc/apt/sources.list
+RUN apt update && \
+	apt install openssh-server -y && \
+	echo "PermitRootLogin yes" >>  /etc/ssh/sshd_config
+	
+RUN echo "root:123" > user.txt && chpasswd < user.txt
+	
 
-RUN apt update && apt install apache2 -y
+EXPOSE 22
 
-RUN pip3 install supervisor && \
-        cp -r /usr/local/lib/python3.11/site-packages/supervisor/ui/* /var/www/html/
+RUN pip3 install webssh supervisor
 
+ADD docker-work/supervisor-wssh.conf /etc/supervisor-wssh.conf 
 
-
-
-
-
-EXPOSE 80
-
-RUN pip3 install webssh
-
-
-CMD ["wssh","--port=80"]
+CMD ["supervisord","-nc","/etc/supervisor-wssh.conf"]
 
