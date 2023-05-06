@@ -14,7 +14,7 @@ RUN pip3 install webssh supervisor && \
 	
 ADD docker-work /etc/apache2/sites-available/
 
-RUN a2enmod proxy && a2enmod proxy_http
+RUN a2enmod proxy && a2enmod proxy_http && service apache2 restart 
 
 ADD docker-work/supervisor-wssh.conf /etc/supervisor-wssh.conf 
 
