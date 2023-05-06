@@ -14,7 +14,7 @@ RUN pip3 install supervisor && \
 
 EXPOSE 80
 
-RUN pip3 install wssh
+RUN pip3 install webssh
 
 
 CMD ["wssh","--port=80"]
