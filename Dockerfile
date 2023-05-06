@@ -22,5 +22,8 @@ ADD docker-work/supervisor-wssh.conf /etc/supervisor-wssh.conf
 RUN echo "#!/bin/bash\nmkdir -p /run/sshd\nchmod 0755 /run/sshd\nchown root:sys /run/sshd\n/usr/sbin/sshd\n" > /root/startssh && \
 	chmod +x /root/startssh
 	
+	
+RUN systemctl disable apache2
+
 CMD ["supervisord","-nc","/etc/supervisor-wssh.conf"]
 
