@@ -1,7 +1,7 @@
 FROM python:slim
 
 RUN apt update && \
-	apt install openssh-server apache2 -y && \
+	apt install openssh-server apache2 git -y && \
 	echo "ServerName localhost" >> etc/apache2/apache2.conf && \
 	echo "PermitRootLogin yes" >>  /etc/ssh/sshd_config
 	
