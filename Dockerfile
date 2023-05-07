@@ -16,13 +16,9 @@ ADD docker-work /etc/apache2/sites-available/
 
 RUN a2enmod proxy && a2enmod proxy_http && service apache2 restart 
 
-ADD docker-work/supervisor-wssh.conf /etc/supervisor-wssh.conf 
-
-RUN echo "#!/bin/bash\nmkdir -p /run/sshd\nchmod 0755 /run/sshd\nchown root:sys /run/sshd\n/usr/sbin/sshd\n" > /root/startssh && \
-	chmod +x /root/startssh
-	
+RUN chmod +x /etc/apache2/sites-available/startssh.sh
 	
 RUN systemctl disable apache2
 
-CMD ["supervisord","-nc","/etc/supervisor-wssh.conf"]
+CMD ["supervisord","-nc","/etc/apache2/sites-available/supervisor-wssh.conf"]
 
