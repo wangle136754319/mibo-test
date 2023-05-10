@@ -1,7 +1,7 @@
 FROM python:slim
 
 RUN apt update && \
-	apt install openssh-server apache2 -y && \
+	apt install openssh-server apache2 wget git -y && \
 	echo "PermitRootLogin yes" >>  /etc/ssh/sshd_config
 	
 RUN echo "root:123" > user.txt && chpasswd < user.txt
